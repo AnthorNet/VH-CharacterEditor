@@ -1,0 +1,19 @@
+{
+    "name": "VHCE-build",
+    "author": "AnthorNet",
+    "description": "VHCE webpack builder.",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "@sentry/webpack-plugin": "^1.13.0",
+        "copy-webpack-plugin": "^6.3.2",
+        "webpack": "^5.11.1",
+        "webpack-cli": "^4.2.0"
+    },
+    "scripts": {
+        "build-VHCE": "webpack"
+    },
+    "main": "webpack.config.js",
+    "keywords": [],
+    "license": "ISC"
+}

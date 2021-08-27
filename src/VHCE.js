@@ -10,8 +10,6 @@ export default class VHCE
         this.debug                      = false;
         this.language                   = 'en';
 
-        this.outlineClass               = 'btn-outline-warning focus';
-
         this.gameDataUrl                = "https://valheim-calculator.com/" + this.language + "/api/game";
 
         // Updater notice
@@ -88,9 +86,7 @@ export default class VHCE
             options.build           = this.build;
             options.debug           = this.debug;
 
-            options.staticUrl       = this.staticAssetsUrl;
             options.dataUrl         = this.gameDataUrl;
-            options.modsUrl         = this.modsDataUrl;
 
             options.language        = this.language;
             options.version         = this.scriptsVERSION;
@@ -114,6 +110,7 @@ export default class VHCE
             }
 
         $('#fileLocation').hide();
+        $('#loaderProgressBar').show();
         $('.loader').addClass('spinning');
         $('.loader h6').html('Loading...');
         $('#dropSaveGame').hide();

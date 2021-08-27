@@ -14,7 +14,6 @@ export default class SaveParser
     load(callback = null)
     {
         this.header             = null;
-        this.objects            = null;
 
         new SaveParser_Read({
             saveParser  : this,

@@ -67,6 +67,10 @@ export default class SaveParser_Read
         {
             $('#loaderProgressBar .progress-bar').css('width', '45%');
 
+
+
+            console.log(this.saveParser);
+
             setTimeout(() => {
                 return this.callback();
             }, 50);
@@ -206,8 +210,8 @@ export default class SaveParser_Read
                     qty         : this.readInt(),
                     durability  : this.readFloat(),
                     position    : {
-                        col         : this.readInt(),
                         row         : this.readInt(),
+                        col         : this.readInt(),
                     },
                     isEquipped  : this.readByte(),
                     quality     : this.readInt(),

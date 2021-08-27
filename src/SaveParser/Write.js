@@ -218,8 +218,8 @@ export default class SaveParser_Write
                 inventory += this.writeString(data.data[i].name);
                 inventory += this.writeInt(data.data[i].qty);
                 inventory += this.writeFloat(data.data[i].durability);
-                inventory += this.writeInt(data.data[i].position.col);
                 inventory += this.writeInt(data.data[i].position.row);
+                inventory += this.writeInt(data.data[i].position.col);
                 inventory += this.writeByte(data.data[i].isEquipped);
                 inventory += this.writeInt(data.data[i].quality);
                 inventory += this.writeInt(data.data[i].variant);
